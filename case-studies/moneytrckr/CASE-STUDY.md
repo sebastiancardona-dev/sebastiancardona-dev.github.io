@@ -128,19 +128,57 @@ inherited from the browser at registration.
 
 ## 7. Screenshots
 
-*(in this folder — `case-studies/moneytrckr/`)*
+*All captures use the seeded demo environment — never real family data.*
 
-| # | Shot | Why it matters |
-|---|------|----------------|
-| 1 | Desktop grid, current-month view | The product's heart: waterline column, tags, summary strip |
-| 2 | Desktop grid, full year with a red row + ⚓ anchors | The two signature semantics, visible |
-| 3 | Row sheet with plan-vs-real + audit history | Actualization model + who-changed-what |
-| 4 | Quick Add with recurrence open | Year planning in one dialog |
-| 5 | CSV import verification report ("all balances match ✓") | Proof-over-promises, user-facing |
-| 6 | Credit card grid with MSI chips + over-limit red | Same engine, shifted threshold |
-| 7 | Budgets home with metadata cards | Multi-ledger + pending-confirmation counts |
-| 8 | iPhone: grid (two-line rows + waterline rail) | Mobile-first redesign |
-| 9 | iPhone: home-screen icon + standalone PWA | Installability |
-| 10 | Landing page | Public face |
-| 11 | Settings: colors + language + avatars | Personalization depth |
-| 12 | WhatsApp link preview card | The craft extends to how it shares |
+**The grid, current month.** The waterline balance column, status tags, and the
+summary strip for the active view:
+
+![Grid, month view](case-study/01-grid-month.png)
+
+**The two signature semantics.** A January where rent lands before the paycheck:
+the balance floods red exactly where the plan doesn't survive, and the ⚓ marks the
+floor — money never needed again from that point:
+
+![Grid with red rows and floor anchor](case-study/02-grid-year-red-anchor.png)
+
+**Plan vs reality + audit.** A row's sheet: the original plan preserved next to the
+actualized values, and a named history of who changed what:
+
+![Row sheet with audit history](case-study/03-row-sheet-audit.png)
+
+**Planning a year in one dialog.** Quick Add with the recurrence section open:
+
+![Quick Add with recurrence](case-study/04-quick-add-recurrence.png)
+
+**Proof over promises, user-facing.** The importer maps columns (auto-guessed from
+the sheet's headers), infers the opening balance from the first row, and dry-runs
+everything through the real engine before a single row is written:
+
+![CSV import with balance verification](case-study/05-import-verified.png)
+
+**Same engine, shifted threshold.** A credit card: installment chips (n/N), cut-day
+awareness, and the alarm at −limit instead of 0:
+
+![Credit card with MSI installments](case-study/06-credit-card.png)
+
+**Multi-ledger home.** Metadata per budget: planned-until, last activity, and how
+many movements await confirmation:
+
+![Budgets home](case-study/07-budgets-home.png)
+
+**Mobile.** The same megatable, redesigned as two-line rows with the balance as a
+full-height waterline rail:
+
+![iPhone grid](case-study/08-iphone-grid.jpeg)
+
+**Public face** (system-language with an EN/ES toggle; social metadata renders a
+full card on WhatsApp/LinkedIn):
+
+![Landing page](case-study/10-landing.png)
+
+![WhatsApp link preview](case-study/12-whatsapp-preview.png)
+
+**Personalization.** Per-user themes, semantic color overrides with live pickers,
+language, avatars:
+
+![Settings](case-study/11-settings.png)
