@@ -60,7 +60,7 @@ Traefik v3 (VPS)
         └─ PostgreSQL 16 (own container, internal network, Flyway migrations)
 
 CI/CD: GitHub Actions → GHCR → build-once-promote pipeline
-  every push → test env (seeded with pure dummy data, basic-auth'd)
+  every push → test env (public, seeded with pure dummy data)
   every tag  → gated through test → GitHub Release → prod (health gate + auto-rollback)
 ```
 
