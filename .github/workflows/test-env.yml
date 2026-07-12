@@ -1,0 +1,15 @@
+name: test-env
+on:
+  workflow_dispatch:        # manual re-runs from the Actions tab
+  push:
+    branches: ["**"]        # every branch push auto-deploys to the test env
+permissions:
+  contents: read
+  packages: write
+jobs:
+  deploy-test:
+    uses: sebastiancardona-dev/workflows/.github/workflows/deploy-test.yml@main
+    with:
+      app: portfolio         # test env: portfolio.test.sebastiancardona.dev
+    secrets:
+      VPS_SSH_KEY: ${{ secrets.VPS_SSH_KEY }}

@@ -1,0 +1,14 @@
+name: release
+on:
+  push:
+    tags: ["v*.*.*"]
+permissions:
+  contents: write
+  packages: write
+jobs:
+  release:
+    uses: sebastiancardona-dev/workflows/.github/workflows/deploy.yml@main
+    with:
+      app: portfolio
+    secrets:
+      VPS_SSH_KEY: ${{ secrets.VPS_SSH_KEY }}
