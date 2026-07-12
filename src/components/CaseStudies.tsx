@@ -40,32 +40,63 @@ export function CaseStudies() {
       <div className="mt-12 grid gap-6 lg:grid-cols-3">
         <Reveal className="lg:col-span-2">
           <article className="flex h-full flex-col rounded-2xl border border-white/10 bg-gradient-to-br from-accent/10 via-ink-900 to-ink-900 p-8 md:p-10">
-            <h3 className="text-2xl font-semibold text-white">
-              CI/CD with gated promotion &amp; auto-rollback
-            </h3>
+            <div className="flex flex-wrap items-center gap-4">
+              <h3 className="text-2xl font-semibold text-white">
+                MoneyTrckr — a year of family finance, in production
+              </h3>
+              <span className="rounded-full border border-accent/30 px-3 py-1 font-mono text-xs text-accent">
+                Live · flagship
+              </span>
+            </div>
             <p className="mt-4 max-w-[58ch] leading-relaxed">
-              Every release builds one immutable image, must survive a testing
-              environment, and only then promotes to production — where a
-              failed health check rolls itself back. Proven with deliberate
-              failure drills, not just claimed.
+              Full-stack replacement for a battle-tested Excel budget: plan the
+              whole year forward, confirm reality against the plan, and read a
+              live accumulated balance that turns red before the money does.
+              Spring Boot + React PWA, invite-only, shared budgets with a full
+              audit trail, at-rest encryption, and a CSV importer that proves
+              every balance against the original sheet before writing a row.
             </p>
             <ul className="mt-6 flex flex-wrap gap-2">
-              <Metric>bad releases blocked before prod</Metric>
-              <Metric>prod self-healed in 69s</Metric>
-              <Metric>new app onboarding: 2 small files</Metric>
+              <Metric>292-row real sheet replayed to the cent</Metric>
+              <Metric>empty repo → prod in 3 days</Metric>
+              <Metric>51 automated tests</Metric>
+              <Metric>unverified API calls die at the proxy</Metric>
             </ul>
             <div className="mt-auto flex flex-wrap gap-6 pt-8">
-              <CardLink href="https://github.com/sebastiancardona-dev/workflows/blob/main/CASE-STUDY.md">
+              <CardLink href="https://moneytrckr.sebastiancardona.dev">Live app</CardLink>
+              <CardLink href="https://github.com/sebastiancardona-dev/sebastiancardona-dev.github.io/blob/main/case-studies/moneytrckr/CASE-STUDY.md">
                 Read the case study
-              </CardLink>
-              <CardLink href="https://github.com/sebastiancardona-dev/workflows">
-                Pipeline source
               </CardLink>
             </div>
           </article>
         </Reveal>
 
         <Reveal delay={0.08}>
+          <article className="flex h-full flex-col rounded-2xl border border-white/10 bg-ink-900 p-8">
+            <h3 className="text-xl font-semibold text-white">
+              CI/CD with gated promotion &amp; auto-rollback
+            </h3>
+            <p className="mt-4 leading-relaxed">
+              One immutable image per release, gated through a testing env
+              before prod, where a failed health check rolls itself back.
+              Proven with deliberate failure drills.
+            </p>
+            <ul className="mt-6 flex flex-wrap gap-2">
+              <Metric>prod self-healed in 69s</Metric>
+              <Metric>onboarding: 2 small files</Metric>
+            </ul>
+            <div className="mt-auto flex flex-wrap gap-6 pt-8">
+              <CardLink href="https://github.com/sebastiancardona-dev/workflows/blob/main/CASE-STUDY.md">
+                Case study
+              </CardLink>
+              <CardLink href="https://github.com/sebastiancardona-dev/workflows">
+                Source
+              </CardLink>
+            </div>
+          </article>
+        </Reveal>
+
+        <Reveal delay={0.12}>
           <article className="flex h-full flex-col rounded-2xl border border-white/10 bg-ink-900 p-8">
             <h3 className="text-xl font-semibold text-white">Swiss Tool of Dev</h3>
             <p className="mt-4 leading-relaxed">
@@ -82,7 +113,7 @@ export function CaseStudies() {
           </article>
         </Reveal>
 
-        <Reveal delay={0.12} className="lg:col-span-3">
+        <Reveal delay={0.16} className="lg:col-span-2">
           <article className="rounded-2xl border border-white/10 bg-ink-900 p-8">
             <div className="flex flex-wrap items-baseline justify-between gap-4">
               <h3 className="text-xl font-semibold text-white">

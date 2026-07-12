@@ -13,15 +13,18 @@ export function Building() {
         <Reveal className="lg:col-span-2">
           <article className="h-full rounded-2xl border border-white/10 bg-gradient-to-br from-accent/10 via-ink-900 to-ink-900 p-8 md:p-10">
             <div className="flex flex-wrap items-center gap-4">
-              <h3 className="text-2xl font-semibold text-white">MoneyTrckr</h3>
+              <h3 className="text-2xl font-semibold text-white">
+                Own OAuth2 / OIDC identity provider
+              </h3>
               <span className="rounded-full border border-accent/30 px-3 py-1 font-mono text-xs text-accent">
-                In development
+                Next up
               </span>
             </div>
             <p className="mt-4 max-w-[55ch] text-lg leading-relaxed">
-              Personal finance without the spreadsheet: the clarity of a
-              well-built finance dashboard, in an app anyone can use. Early
-              stage, and the project I'm putting my evenings into.
+              One login for the whole ecosystem: an RFC-faithful authorization
+              server (code + PKCE, JWKS rotation, invite tokens with audit)
+              built to understand the protocol deeply — and to retire
+              MoneyTrckr&apos;s interim edge key with real federated identity.
             </p>
           </article>
         </Reveal>
