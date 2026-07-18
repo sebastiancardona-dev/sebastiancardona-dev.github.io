@@ -14,17 +14,18 @@ export function Building() {
           <article className="h-full rounded-2xl border border-white/10 bg-gradient-to-br from-accent/10 via-ink-900 to-ink-900 p-8 md:p-10">
             <div className="flex flex-wrap items-center gap-4">
               <h3 className="text-2xl font-semibold text-white">
-                Own OAuth2 / OIDC identity provider
+                Logs &amp; versions — the portal grows modules
               </h3>
               <span className="rounded-full border border-accent/30 px-3 py-1 font-mono text-xs text-accent">
                 Next up
               </span>
             </div>
             <p className="mt-4 max-w-[55ch] text-lg leading-relaxed">
-              One login for the whole ecosystem: an RFC-faithful authorization
-              server (code + PKCE, JWKS rotation, invite tokens with audit)
-              built to understand the protocol deeply — and to retire
-              MoneyTrckr&apos;s interim edge key with real federated identity.
+              A centralized logs pipeline with its own query language, and a
+              release/artifact monitor reading the deploy pipeline&apos;s own
+              metadata — both as modules inside the portal, both riding the same
+              contracts every app already implements. Then the capstone: rebuild
+              the whole platform from zero, scripted and timed.
             </p>
           </article>
         </Reveal>

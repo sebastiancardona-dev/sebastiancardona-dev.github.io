@@ -114,6 +114,66 @@ export function CaseStudies() {
         </Reveal>
 
         <Reveal delay={0.16} className="lg:col-span-2">
+          <article className="flex h-full flex-col rounded-2xl border border-white/10 bg-gradient-to-br from-accent/10 via-ink-900 to-ink-900 p-8 md:p-10">
+            <div className="flex flex-wrap items-center gap-4">
+              <h3 className="text-2xl font-semibold text-white">
+                Portal — an ops dashboard that discovers its own ecosystem
+              </h3>
+              <span className="rounded-full border border-accent/30 px-3 py-1 font-mono text-xs text-accent">
+                Live
+              </span>
+            </div>
+            <p className="mt-4 max-w-[58ch] leading-relaxed">
+              Single pane of glass for every app on the platform: health, versions,
+              deploy history, host and per-container stats on a drag-and-drop widget
+              grid — plus the identity provider&apos;s admin console (users, invites,
+              audit). Apps are discovered from deploy state and Docker labels; adding
+              app #8 requires zero portal changes. SSO-gated, recruiters welcome
+              read-only.
+            </p>
+            <ul className="mt-6 flex flex-wrap gap-2">
+              <Metric>zero-config app discovery</Metric>
+              <Metric>observer ≈ 10% of the observed</Metric>
+              <Metric>monitors itself, no special-casing</Metric>
+              <Metric>read-only by construction</Metric>
+            </ul>
+            <div className="mt-auto flex flex-wrap gap-6 pt-8">
+              <CardLink href="https://portal.sebastiancardona.dev">Live app</CardLink>
+              <CardLink href="https://github.com/sebastiancardona-dev/portal/blob/main/docs/CASE-STUDY.md">
+                Read the case study
+              </CardLink>
+            </div>
+          </article>
+        </Reveal>
+
+        <Reveal delay={0.2}>
+          <article className="flex h-full flex-col rounded-2xl border border-white/10 bg-ink-900 p-8">
+            <h3 className="text-xl font-semibold text-white">
+              Own OAuth2 / OIDC identity provider
+            </h3>
+            <p className="mt-4 leading-relaxed">
+              One login for the whole ecosystem: code + PKCE only, DB-backed JWKS
+              rotation, invite-gated registration with a full audit trail, and a
+              headless admin API whose UI lives in the portal. MoneyTrckr and the
+              portal sign in through it in production.
+            </p>
+            <ul className="mt-6 flex flex-wrap gap-2">
+              <Metric>PKCE-only, RFC 9700 posture</Metric>
+              <Metric>signing keys survive redeploys</Metric>
+              <Metric>per-app last-used tracking</Metric>
+            </ul>
+            <div className="mt-auto flex flex-wrap gap-6 pt-8">
+              <CardLink href="https://github.com/sebastiancardona-dev/auth-service/blob/main/CASE-STUDY.md">
+                Case study
+              </CardLink>
+              <CardLink href="https://github.com/sebastiancardona-dev/auth-service">
+                Source
+              </CardLink>
+            </div>
+          </article>
+        </Reveal>
+
+        <Reveal delay={0.24} className="lg:col-span-2">
           <article className="rounded-2xl border border-white/10 bg-ink-900 p-8">
             <div className="flex flex-wrap items-baseline justify-between gap-4">
               <h3 className="text-xl font-semibold text-white">
