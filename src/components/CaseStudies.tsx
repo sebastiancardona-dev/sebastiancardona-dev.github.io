@@ -146,7 +146,43 @@ export function CaseStudies() {
           </article>
         </Reveal>
 
-        <Reveal delay={0.2}>
+        <Reveal delay={0.2} className="lg:col-span-2">
+          <article className="flex h-full flex-col rounded-2xl border border-white/10 bg-gradient-to-br from-accent/10 via-ink-900 to-ink-900 p-8 md:p-10">
+            <div className="flex flex-wrap items-center gap-4">
+              <h3 className="text-2xl font-semibold text-white">
+                Ecosystem SSO — swapping the identity provider of a live app
+              </h3>
+              <span className="rounded-full border border-accent/30 px-3 py-1 font-mono text-xs text-accent">
+                Live
+              </span>
+            </div>
+            <p className="mt-4 max-w-[58ch] leading-relaxed">
+              An OAuth2 / OIDC provider built on Spring Authorization Server,
+              proven the only way that counts: migrating MoneyTrckr — live, with
+              real users and real financial data — onto it via a
+              backend-for-frontend. The SPA-holds-tokens plan died to a
+              five-minute probe; the BFF shipped with sessions that survive
+              deploys, and four bugs only a deployed environment could reveal
+              are written up, not hidden.
+            </p>
+            <ul className="mt-6 flex flex-wrap gap-2">
+              <Metric>IdP swapped, zero controller changes</Metric>
+              <Metric>plan A killed by a 5-min probe</Metric>
+              <Metric>sessions survive deploys</Metric>
+              <Metric>4 bugs only prod could teach</Metric>
+            </ul>
+            <div className="mt-auto flex flex-wrap gap-6 pt-8">
+              <CardLink href="https://github.com/sebastiancardona-dev/sebastiancardona-dev.github.io/blob/main/case-studies/sso/CASE-STUDY.md">
+                Read the case study
+              </CardLink>
+              <CardLink href="https://github.com/sebastiancardona-dev/auth-service">
+                Provider source
+              </CardLink>
+            </div>
+          </article>
+        </Reveal>
+
+        <Reveal delay={0.24}>
           <article className="flex h-full flex-col rounded-2xl border border-white/10 bg-ink-900 p-8">
             <h3 className="text-xl font-semibold text-white">
               Own OAuth2 / OIDC identity provider
@@ -173,7 +209,7 @@ export function CaseStudies() {
           </article>
         </Reveal>
 
-        <Reveal delay={0.24} className="lg:col-span-2">
+        <Reveal delay={0.28} className="lg:col-span-3">
           <article className="rounded-2xl border border-white/10 bg-ink-900 p-8">
             <div className="flex flex-wrap items-baseline justify-between gap-4">
               <h3 className="text-xl font-semibold text-white">
